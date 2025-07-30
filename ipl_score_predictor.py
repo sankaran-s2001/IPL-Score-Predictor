@@ -9,7 +9,7 @@ import os
 
 st.set_page_config(page_title='IPL Score Predictor 2024', layout="centered")
 
-MODEL_URL = "https://huggingface.co/sankarans2001/IPL-Score-Predictor/blob/main/rfr_model.pkl"
+MODEL_URL = "https://huggingface.co/sankarans2001/IPL-Score-Predictor/resolve/main/rfr_model.pkl"
 MODEL_PATH = "rfr_model.pkl"
 
 @st.cache_resource
