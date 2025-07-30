@@ -13,7 +13,7 @@ Predict the final score of ongoing IPL matches quickly and easily!
 
 ## 📊 About the Dataset
 
-The [IPL Dataset](https://www.kaggle.com/datasets/umairziact/ipl-dataset)[^1] is a collection of cricket match records, designed for analysis and machine learning projects. This dataset contains:
+The [IPL Dataset](https://www.kaggle.com/datasets/umairziact/ipl-dataset) is a collection of cricket match records, designed for analysis and machine learning projects. This dataset contains:
 
 - **Match Details:** Match ID, date, and venue.
 - **Team Names:** Batting and bowling teams.
