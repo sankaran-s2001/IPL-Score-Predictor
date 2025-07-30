@@ -151,3 +151,11 @@ if submit:
 
         st.success(f"🏁 **Predicted Final Score:** Between **{predicted_score - 5}** and **{predicted_score + 5}** runs")
 
+
+st.markdown("""
+    <div style="background-color: rgba(0, 0, 0, 0.6); padding: 12px; border-radius: 10px; margin-top: 20px;">
+        ⚠️ <strong>Disclaimer:</strong><br>
+        This application is made for learning and demo purposes. The predictions are based on historical match data, so they may not always match real game results. In the future, we plan to include more real-time and detailed match information to improve prediction accuracy.
+    </div>
+""", unsafe_allow_html=True)
+
