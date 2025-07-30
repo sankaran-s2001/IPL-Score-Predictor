@@ -5,6 +5,12 @@
 
 Predict the final score of ongoing IPL matches quickly and easily!
 
+## ✨ Demo Screenshots
+
+![App Screenshot](app_screenshot.png)
+
+**[Live Demo - Try it here!](https://ipl-score-predictor-fsu9.onrender.com/)**
+
 ## 📊 About the Dataset
 
 The IPL Dataset is a collection of cricket match records, designed for analysis and machine learning projects. This dataset contains:
@@ -102,10 +108,6 @@ streamlit run app.py
 ├── IPL_Score_Predictor.ipynb  
 ```
 
-
-## ✨ Demo Screenshots
-
-*(app_screenshot.png)*
 
 ## 💡 Why This Project?
 
