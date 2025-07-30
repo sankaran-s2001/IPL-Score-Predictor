@@ -3,10 +3,25 @@ import numpy as np
 import pickle
 import streamlit as st
 import base64
+import joblib
+import requests
+import os
 
 st.set_page_config(page_title='IPL Score Predictor 2024', layout="centered")
 
-model = pickle.load(open('rfr_model.pkl', 'rb'))
+MODEL_URL = "https://huggingface.co/sankarans2001/IPL-Score-Predictor/blob/main/rfr_model.pkl"
+MODEL_PATH = "rfr_model.pkl"
+
+@st.cache_resource
+def load_model():
+    # Download model if not already present
+    if not os.path.exists(MODEL_PATH):
+        with open(MODEL_PATH, "wb") as f:
+            f.write(requests.get(MODEL_URL).content)
+    return joblib.load(MODEL_PATH)
+
+# Load and cache model
+model = load_model()
 
 def get_base64_of_image(image_path):
     with open(image_path, "rb") as image_file:
